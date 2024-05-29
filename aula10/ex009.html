@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>País</h1>
+    Qual país você nasceu <input type="text" id="txt"> <br>
+    <input type="button" value="Verificar" onclick="verifica()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verifica() {
+            var txt = document.getElementById('txt').value.toLowerCase()
+            var res = document.getElementById('res')
+            if (txt === 'brasil')
+            res.innerHTML = `Flamengooo!`
+            else
+            res.innerHTML = `Pra gringo é mais caro`
+
+        }
+    </script>
+</body>
+</html>
